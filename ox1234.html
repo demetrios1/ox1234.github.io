@@ -1,4 +1,3 @@
-
 <style>
 body {
     background: #e8cbc0;
@@ -8,25 +7,159 @@ body {
     background:linear-gradient(to right, #eccfcf, #6fa7db);
     min-height: 100vh;
 }
+.container2 {
+  position: relative;
+  text-align: center;
+  color: black;
+}
 
-/*.social-link {
-    width: 30px;
-    height: 30px;
-    border: 1px solid #ddd;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #666;
-    border-radius: 50%;
-    transition: all 0.3s;
-    font-size: 0.9rem;
-}*/
+.buttonteam {
+  border: 1px solid #111;
+  border-radius: 4px;
+  outline: 0;
+  display: inline-block;
+  padding: 2px;
+  color: #edf6ff;
+  background-color:transparent; /*#374c72 this is the one on the lists*/;/*#3388c4;*/
+  text-align: center;
+  cursor: pointer;
+  /*margin-right:20%;  bad centering
+  width: 60%;
+  margin-left:20%;*/
+  font-size:16px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
 
-/*.social-link:hover, .social-link:focus {
-    background: #ddd;
-    text-decoration: none;
-    color: #555;
-}*/
+.buttonteam:hover {
+  background-color:#601152;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+#mid{
+  width: 100%;
+  padding: 0px 0;
+  text-align: left;
+
+  margin-top: 4px;
+ 
+}
+
+
+#elder{
+  width: 100%;
+  padding: 0px 0;
+  text-align: left;
+
+  margin-top: 4px;
+
+}
+
+#noob{
+  width: 100%;
+  padding: 0px 0;
+  text-align: left;
+
+  margin-top: 4px;
+
+}
+
+#myDIV1 {
+  width: 100%;
+  padding: 4px 0;
+  text-align: center;
+
+  margin-top: 4px;
+  display:none;
+}
+#myDIV2 {
+  width: 100%;
+  padding: 4px 0;
+  text-align: center;
+
+  margin-top: 4px;
+  display:none;
+}
+#myDIV3 {
+  width: 100%;
+  padding: 4px 0;
+  text-align: center;
+
+  margin-top: 4px;
+  display:none;
+}
+#myDIV4 {
+  width: 100%;
+  padding: 4px 0;
+  text-align: center;
+
+  margin-top: 4px;
+  display:none;
+}
+#myDIV5 {
+  width: 100%;
+  padding: 4px 0;
+  text-align: center;
+
+  margin-top: 4px;
+  display:none;
+}
+
+#myDIV6 {
+  width: 100%;
+  padding: 4px 0;
+  text-align: center;
+
+  margin-top: 4px;
+  display:none;
+}
+#myDIV7 {
+  width: 100%;
+  padding: 4px 0;
+  text-align: center;
+
+  margin-top: 4px;
+  display:none;
+}
+
+#myDIV8 {
+  width: 100%;
+  padding: 4px 0;
+  text-align: center;
+
+  margin-top: 4px;
+  display:none;
+}
+
+#myDIV9 {
+  width: 100%;
+  padding: 4px 0;
+  text-align: center;
+
+  margin-top: 4px;
+  display:none;
+}
+
+#myDIV10 {
+  width: 100%;
+  padding: 4px 0;
+  text-align: center;
+
+  margin-top: 4px;
+  display:none;
+}
+
+#myDIV11 {
+  width: 100%;
+  padding: 4px 0;
+  text-align: center;
+
+  margin-top: 4px;
+  display:none;
+}
+
+
+
 .center {
   display: block;
   margin-left: auto;
@@ -37,18 +170,20 @@ body {
 </style>
 
 <html>
-<head>
+
 <meta name="viewport" content="width=750; ">
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<head>
+<link href="pics/sword.svg" rel="icon" size="large">
 
 <title>OX 1234</title>
-
+</head>
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet">
 
   <!-- Bootstrap CSS File -->
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 <!-- For demo purpose -->
 <div class="container py-5">
     <div class="row text-center text-white">
@@ -61,130 +196,292 @@ body {
         </div>
     </div>
 </div><!-- End -->
- <img src="pics/ox1234.svg" alt="OX" class="center"> 
+ <img src="pics/sword.svg" alt="OX" class="center" width="250"> 
 
 <div class="container">
+          <p><button onclick="elderfun()" class="buttonteam">Council of Elders</button></p>
+ <div class id="elder">
     <div class="row text-center">
 
         <!-- Team item -->
         <div class="col-xl-3 col-sm-6 mb-5">
             <div class="bg rounded shadow-sm py-5 px-4"><img src="pics/eddie.png" alt="Vincent" width="200" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                <h5 class="mb-0">Tsar Young Money- Elder</h5><span class="small text-uppercase text-dark">A fearless warrior, Tsar Young Money was the founder of the noble clan.  Never one to shy away from battle, he is known 
-                for his aggressive use of archers and baloons, as well as his bold declarations of war.</span>
-              <!--   <ul class="social mb-0 list-inline mt-3">
-                   <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
-                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
-                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
-                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
-                </ul>-->
+                <h5 class="mb-0">Tsar Young Money</h5>
+                
+             <br>
+                     <div class="container2"><p><button onclick="myFunction1()" class="buttonteam">Read More</button></p></div>
+        <div id="myDIV1">A fearless warrior, Tsar Young Money was the founder of the noble clan.  Never one to shy away from battle, he is known 
+                for his aggressive use of archers and baloons, as well as his bold declarations of war.</div>
+      
             </div>
         </div><!-- End -->
 
         <!-- Team item -->
         <div class="col-xl-3 col-sm-6 mb-5">
             <div class="bg rounded shadow-sm py-5 px-4"><img src="pics/riley.jpg" alt="" width="200" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                <h5 class="mb-0">Chancellor Palpatine</h5><span class="small text-uppercase text-dark">Palpatine currently sits as the 2nd most powerful entity in the clan. Known for his painstaking attention to detail and 
-                rigorous film study, Palpatines wisdom and love for the game provide strong inspiration for OX 1234.</span>
-             <!--    <ul class="social mb-0 list-inline mt-3">
-                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
-                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
-                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
-                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
-                </ul>-->
+                <h5 class="mb-0">Chancellor Palpatine</h5>
+              <br>
+                     <div class="container2"><p><button onclick="myFunction2()" class="buttonteam">Read More</button></p></div>
+        <div id="myDIV2">
+                Palpatine currently sits as the 2nd most powerful entity in the clan. Known for his painstaking attention to detail and 
+                rigorous film study, Palpatines wisdom and love for the game provide strong inspiration for OX 1234.</div>
+      
             </div>
         </div><!-- End -->
 
-        <!-- Team item -->
+         <!-- Team item -->
         <div class="col-xl-3 col-sm-6 mb-5">
-            <div class="bg rounded shadow-sm py-5 px-4"><img src="pics/mitch.png" alt="" width="200" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                <h5 class="mb-0">Tredyfynn: The Vanquisher</h5><span class="small text-uppercase text-dark">While still a noob, the vanquisher takes great pride in building his defenses.  His accumulation of wealth and outreach for the clan are greatly 
-                appreciated by his brethren, and feared by his foes.</span>
-           <!--      <ul class="social mb-0 list-inline mt-3">
-                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
-                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
-                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
-                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
-                </ul>-->
+            <div class="bg rounded shadow-sm py-5 px-4"><img src="pics/caesar.png" alt="Vincent" width="200" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                <h5 class="mb-0">General Kenobi</h5>   <br>
+                     <div class="container2"><p><button onclick="myFunction5()" class="buttonteam">Read More</button></p></div>
+        <div id="myDIV5">Kenobi, currently the number one ranked warrior in the clan.  Despite his immense advantage over his fellow warriors, Kenobi
+                is always quick to donate even his most powerful troops.  His complete selflessness has kept the clan together, even through the darkest of fortnites.  Kenobi is often at odds with Palpatine, warring for supremacy.</div>
+       
             </div>
         </div><!-- End -->
 
         <!-- Team item -->
         <div class="col-xl-3 col-sm-6 mb-5">
             <div class="bg rounded shadow-sm py-5 px-4"><img src="pics/manuel.png" alt="" width="200" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                <h5 class="mb-0">Flip, Chobani Flip</h5><span class="small text-uppercase text-dark">Flip is the most feared builder in all the land. As sure as the sun rises, Flip will land the clan 100 builder trophies a day.  
-                Flip's powers grow by the day, and he will soon have the ability to destroy his foes at a scale hitherto undreamt of.</span>
-            <!--     <ul class="social mb-0 list-inline mt-3">
-                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
-                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
-                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
-                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
-                </ul>-->
+                <h5 class="mb-0">Flip, Chobani Flip</h5>   <br>
+                     <div class="container2"><p><button onclick="myFunction4()" class="buttonteam">Read More</button></p></div>
+        <div id="myDIV4">Flip is the most feared builder in all the land. As sure as the sun rises, Flip will land the clan 100 builder trophies a day.  
+                Flip's powers grow by the day, and he will soon have the ability to destroy his foes at a scale hitherto undreamt of.</div>
+      
             </div>
         </div><!-- End -->
     </div>
 </div>
-
-
+</div>
+<!-- Row 2-->
 <div class="container">
+      <p><button onclick="analystsfun()" class="buttonteam">The Paladins of the Wind</button></p>
+ <div class id="mid">
     <div class="row text-center">
 
-        <!-- Team item -->
+     
+  <!-- Team item -->
         <div class="col-xl-3 col-sm-6 mb-5">
-            <div class="bg rounded shadow-sm py-5 px-4"><img src="pics/caesar.png" alt="Vincent" width="200" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                <h5 class="mb-0">General Kenobi</h5><span class="small text-uppercase text-dark">Kenobi, currently the number one ranked warrior in the clan.  Despite his immense advantage over his fellow warriors, Caesar
-                is always quick to donate even his most powerful troops.  His complete selflessness has kept the clan together, even through the darkest of fortnites.  Kenobi is often at odds with Palpatine, warring for supremacy.</span>
-              <!--   <ul class="social mb-0 list-inline mt-3">
-                   <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
-                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
-                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
-                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
-                </ul>-->
+            <div class="bg rounded shadow-sm py-5 px-4"><img src="pics/mitch.png" alt="" width="200" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                <h5 class="mb-0">Tredyfynn: The Vanquisher</h5>   <br>
+                     <div class="container2"><p><button onclick="myFunction3()" class="buttonteam">Read More</button></p></div>
+        <div id="myDIV3">While still a noob, the vanquisher takes great pride in building his defenses.  His accumulation of wealth and bond with his kin are greatly 
+                appreciated by his brethren, and feared by his foes.</div>
+      
             </div>
         </div><!-- End -->
-
         <!-- Team item -->
         <div class="col-xl-3 col-sm-6 mb-5">
             <div class="bg rounded shadow-sm py-5 px-4"><img src="pics/pablo.png" alt="" width="200" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                <h5 class="mb-0">Knight Aramburu</h5><span class="small text-uppercase text-dark">Knight Aramburu is a mythic creature who's suprise ascent to the higher ranks of the clan have elevated OX's profile to the elite status.  Famous
-                for always utilizing the best of his clan's reinforcements, Knight Aramburu is never afraid to attack and increase his trophy count.</span>
-             <!--    <ul class="social mb-0 list-inline mt-3">
-                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
-                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
-                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
-                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
-                </ul>-->
+                <h5 class="mb-0">Knight Aramburu</h5>   <br>
+                     <div class="container2"><p><button onclick="myFunction6()" class="buttonteam">Read More</button></p></div>
+        <div id="myDIV6">Knight Aramburu is a mythic creature who's suprise ascent to the higher ranks of the clan have elevated OX's profile to the elite status.  Famous
+                for always utilizing the best of his clan's reinforcements, Knight Aramburu is never afraid to attack and increase his trophy count.</div>
+        
             </div>
         </div><!-- End -->
 
         <!-- Team item -->
         <div class="col-xl-3 col-sm-6 mb-5">
             <div class="bg rounded shadow-sm py-5 px-4"><img src="pics/jeff.png" alt="" width="200" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                <h5 class="mb-0">Duce Tortellini</h5><span class="small text-uppercase text-body">A being of immense power, Duce Tortellini rose through the ranks of the clan in the blink of an eye.  Famous for his careful scouting and 
-                ruthless attacks, Tortellini has amounted a fortune that would turn the heads of even a king.  OX 1234 thanks their stars every night that Tortellini is on their side.</span>
-           <!--      <ul class="social mb-0 list-inline mt-3">
-                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
-                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
-                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
-                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
-                </ul>-->
+                <h5 class="mb-0">Duce Tortellini</h5>   <br>
+                     <div class="container2"><p><button onclick="myFunction7()" class="buttonteam">Read More</button></p></div>
+        <div id="myDIV7">A being of immense power, Duce Tortellini rose through the ranks of the clan in the blink of an eye.  Famous for his careful scouting and 
+                ruthless attacks, Tortellini has amounted a fortune that would turn the heads of even a king.  OX 1234 thanks their stars every night that Tortellini is on their side.</div>
+       
+            </div>
+        </div><!-- End -->
+   <!-- Team item -->
+        <div class="col-xl-3 col-sm-6 mb-5">
+            <div class="bg rounded shadow-sm py-5 px-4"><img src="pics/gerry1.png" alt="" width="200" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                <h5 class="mb-0">Sikko Modum</h5>   <br>
+                     <div class="container2"><p><button onclick="myFunction11()" class="buttonteam">Read More</button></p></div>
+        <div id="myDIV11">Sikko Modum returns to the clan after a brief hiatus, and his kin are glad to have him back.  An experienced warrior, Modum has travelled all the lands, performing reconaissance for 
+        OX-1234, risking everything for the good of the clan.  While a wildcard by nature, Modum is back for the long haul, ready to work hand in hand with Palpatine to achieve clan greatness.</div>
+       
+            </div>
+        </div><!-- End -->
+   
+    </div>
+</div>
+</div>
+
+<!--Row 3-->
+
+
+<div class="container">
+          <p><button onclick="noobfun()" class="buttonteam">The Noobs</button></p>
+ <div class id="noob">
+    <div class="row text-center">
+
+    
+
+        <!-- Team item -->
+        <div class="col-xl-3 col-sm-6 mb-5">
+            <div class="bg rounded shadow-sm py-5 px-4"><img src="pics/adam.jpg" alt="" width="200" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                <h5 class="mb-0">Obligatory Name Change</h5>   <br>
+                     <div class="container2"><p><button onclick="myFunction9()" class="buttonteam">Read More</button></p></div>
+        <div id="myDIV9">Obligatory name change exemplifies all that is right with OX 1234.  Consistently one of the most reliable members in the clan wars, change 
+        does not focus on menial details such as landscaping, rather directing his attention to major issues such as ensuring the clan's incredible 4-1 war record.
+        </div>
+        
             </div>
         </div><!-- End -->
 
         <!-- Team item -->
         <div class="col-xl-3 col-sm-6 mb-5">
-            <div class="bg rounded shadow-sm py-5 px-4"><img src="pics/michail.png" alt="" width="200" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                <h5 class="mb-0">Warlord Babatunde</h5><span class="small text-uppercase text-dark">Babatunde is one of the newest additions to the clan.  While his experience is lacking, his dedication to the clan is felt in many ways.  The future
-                looks bright for Babatunde, given both his most recent plunders and his resilience to originally being blocked from joining OX-1234.</span>
-            <!--     <ul class="social mb-0 list-inline mt-3">
-                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
-                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
-                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
-                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
-                </ul>-->
+            <div class="bg rounded shadow-sm py-5 px-4"><img src="pics/vincent.jpg" alt="" width="200" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                <h5 class="mb-0">Marethyu</h5>   <br>
+                     <div class="container2"><p><button onclick="myFunction10()" class="buttonteam">Read More</button></p></div>
+        <div id="myDIV10">Marethyu is the newest addition to the clan.  A wise, mystic creature who resides in the shire, Marethyu excels in hand to hand combat, one
+        of the few weaknesses of OX-1234.  While Marethyu has big shoes to fill with the departure of Wombat Wagner, the clan has tremendous faith in his abilities.</div>
+       
             </div>
         </div><!-- End -->
+
+     <!-- Team item -->
+        <div class="col-xl-3 col-sm-6 mb-5">
+            <div class="bg rounded shadow-sm py-5 px-4"><img src="pics/michail.png" alt="" width="200" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                <h5 class="mb-0">Warlord Babatunde</h5>   <br>
+                     <div class="container2"><p><button onclick="myFunction8()" class="buttonteam">Read More</button></p></div>
+        <div id="myDIV8">Babatunde is one of the newest additions to the clan.  While his experience is lacking, his dedication to the clan is felt in many ways.  Never one to shy from a challenge, the future
+                looks bright for Babatunde, given both his most recent plunders and his resilience after being blocked from joining OX-1234.</div>
+     
+            </div>
+        </div><!-- End -->
+ 
+  
     </div>
 </div>
 
 
-</head>
+
+<script>
+ //for the hidden button 1 (yeah this is lazy)
+    function myFunction1() {
+  var x = document.getElementById("myDIV1");
+  if (x.style.display  && x.style.display !== "none") { //need && so we dont need to click twice...not sure why
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+//write now we have a function for every toggle button that 
+//are identical but point to different tag elements (tag not class)
+
+ function myFunction2() {
+  var x = document.getElementById("myDIV2");
+  if (x.style.display  && x.style.display !== "none") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+ function myFunction3() {
+  var x = document.getElementById("myDIV3");
+  if (x.style.display  && x.style.display !== "none") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+ function myFunction4() {
+  var x = document.getElementById("myDIV4");
+  if (x.style.display  && x.style.display !== "none") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+ function myFunction5() {
+  var x = document.getElementById("myDIV5");
+  if (x.style.display  && x.style.display !== "none") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+} function myFunction6() {
+  var x = document.getElementById("myDIV6");
+  if (x.style.display  && x.style.display !== "none") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+ function myFunction7() {
+  var x = document.getElementById("myDIV7");
+  if (x.style.display  && x.style.display !== "none") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+ function myFunction8() {
+  var x = document.getElementById("myDIV8");
+  if (x.style.display  && x.style.display !== "none") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+ function myFunction9() {
+  var x = document.getElementById("myDIV9");
+  if (x.style.display  && x.style.display !== "none") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+
+ function myFunction10() {
+  var x = document.getElementById("myDIV10");
+  if (x.style.display  && x.style.display !== "none") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+ function myFunction11() {
+  var x = document.getElementById("myDIV11");
+  if (x.style.display  && x.style.display !== "none") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+
+//for the analysts
+  function analystsfun() {
+  var x = document.getElementById("mid");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+
+  function noobfun() {
+  var x = document.getElementById("noob");
+   if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+  function elderfun() {
+  var x = document.getElementById("elder");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+</script>
